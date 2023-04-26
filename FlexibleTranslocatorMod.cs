@@ -15,7 +15,7 @@ namespace FlexibleTranslocator
     public class FlexibleTranslocatorMod : ModSystem
     {
 
-		const string LogHeader = "FLEXIBLE_TRANSLOCATOR_1_0";
+		const string LogHeader = "FLEXIBLE_TRANSLOCATOR_1_1";
 		const string ConfigFilename = "FlexibleTranslocatorConfig.json";
 
 		ICoreAPI CoreApi;
@@ -52,7 +52,8 @@ namespace FlexibleTranslocator
 
 			ServerApi = api;
 
-			ServerApi.RegisterCommand("flextrans", "Flexible Translocator mod utility command.", "[setmin #|setmax #]", Cmd_FlexTrans);
+			// Still just using the 1.17 deprecated API for now.
+			ServerApi.RegisterCommand("flextrans", "Flexible Translocator mod utility command.", "[setmin #|setmax #]", Cmd_FlexTrans, Privilege.controlserver);
 		}
 
 		#endregion

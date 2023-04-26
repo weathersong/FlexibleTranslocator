@@ -1,0 +1,11 @@
+{
+  "type": "code",
+  "modid": "flexibletranslocator",
+  "name": "Flexible Translocator",
+  "authors": ["weathersong"],
+  "description": "Harmony patch to Static Translocator, enabling some of its properties like distance to be user-configurable.",
+  "version": "1.1.0",
+  "dependencies": {
+    "game": ""
+  }
+}
